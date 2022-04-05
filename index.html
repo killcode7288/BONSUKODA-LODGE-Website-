@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bonsukoda | Home</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="row">
+             <h1>B.K LODGE</h1>
+            </div>
+            </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Booking.html">Bookings</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="dev.html">Developers</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </span>
+        </ul>
+    </nav>
+    <hr>
+    
+    <!-------------------Slider-------------------->
+    <div class="slider-main-container">
+        <div class="slider-inner-container">
+           <div class="slide active" style="background: #5C80BC;">
+              <div class="image-container">
+                 <img src="/images/bg.jpg">
+              </div>
+              <div class="caption-container">
+                 <div class="caption">
+                    <h1>WELCOME TO BONSUKODA LODGE</h1>
+                    <p>BONSUKODA LODGE is a place where all our customers are made to feel at home with all
+                        our resources and senery.
+                        BONSUKODA LODGE offers nothing but the best rooms for either short or long stay.
+                    </p>
+                    <a href="about.html">Learn More <i class="fa fa-angle-double-right"></i></a>
+                 </div>
+              </div>
+           </div>
+           <div class="slide" style="background: #FF8811;">
+              <div class="image-container">
+                 <img src="/images/bed4.jpg">
+              </div>
+              <div class="caption-container">
+                 <div class="caption">
+                    <h1>BOOK A ROOM OR CONFERENCE ROOM NOW</h1>
+                    <p>Check for available rooms and conference halls by clicking the button bellow.</p>
+                    <a href="Booking.html">Book Now <i class="fa fa-angle-double-right"></i></a>
+                 </div>
+              </div>
+           </div>
+           <div class="slide" style="background: #00B9AE;">
+              <div class="image-container">
+                 <img src="/images/pool.jpg">
+              </div>
+              <div class="caption-container">
+                 <div class="caption">
+                    <h1>CHECK OUT OUR GALLERY</h1>
+                    <p>To have a view of our lodge and to have a feel of our facilities check out our gallery below</p>
+                    <a href="gallery.html">Gallery <i class="fa fa-angle-double-right"></i></a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="controls">
+         <div class="prev"><i class="fa fa-chevron-circle-left" style="font-size: 34px;"></i></div>
+         <div class="next"><i class="fa fa-chevron-circle-right" style="font-size: 34px;"></i></div>
+     </div>
+
+     <div class="indicator">
+
+     </div>
+     <footer>
+        <p style="text-align: center; color: white;">BONSUKODA LODGE 2022</p>
+    </footer>
+<script src="J.js"></script>
+<script>
+   const mainMenu = document.querySelector('.mainMenu');
+            const closeMenu = document.querySelector('.closeMenu');
+            const openMenu = document.querySelector('.openMenu');
+
+            openMenu.addEventListener('click',show);
+            closeMenu.addEventListener('click',close);
+
+            function show(){
+                mainMenu.style.display = 'flex';
+                mainMenu.style.top = '0';
+            }
+            function close(){
+                mainMenu.style.top = '-100%';
+            }
+
+            var MenuItems = document.getElementById("MenuItems");
+        
+            MenuItems.style.maxHeight = "0px";
+        
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+            }
+
+            let value = 5 * "3";
+</script>
+</body>
+</html>
